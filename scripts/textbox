@@ -17,6 +17,7 @@ minetest.register_chatcommand("textbox", {
         -- Show a formspec (popup) to the target player
         local formspec = "formspec_version[4]" ..
                          "size[6,4]" ..
+                         "no_prepend[] bgcolor[#1c2026]",
                          "label[0.5,0.5;" .. minetest.formspec_escape(text) .. "]" ..
                          "button_exit[2,3;2,1;exit;Close]"
 
